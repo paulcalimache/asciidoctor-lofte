@@ -1,5 +1,7 @@
 = Asciidoctor PDF LoFTE
 
+THIS REPOSITORY IS A CLONE OF https://gitlab.com/baiyibai/asciidoctor-pdf-lofte
+
 This repository contains an .rb file which provides an extension for Asciidoctor-PDF which generates a *List of Figures* (LoF), a *List of Tables* (LoT), a *List of Examples* (LoE), and a *List of Listings* (LoL).
 
 .List of Figures
