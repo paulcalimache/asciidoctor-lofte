@@ -1,0 +1,73 @@
+:allow-uri-read: ''
+:doctype: book
+:xrefstyle: short
+:sectids:
+:sectnums: |,all|
+
+:toclevels: 5
+:toc:
+:toc-title: Table of Contents
+:lof-title: List of Figures
+:lot-title: List of Tables
+:loe-title: List of Examples
+:lol-title: List of Listings
+:listing-caption: Listing
+:include-lists-in-toc:
+
+:source-highlighter: rouge
+
+
+= Asciidoctor LoFTE
+
+== Content
+
+Didn't the LoF, LoT, LoE, and LoL look nice?
+
+Build command:
+
+```
+asciidoctor-pdf -r ./asciidoctor-pdf-lofte.rb -a pdf-theme=runningcontent -a pdf-themesdir=resources/themes -a allow-uri-read asciidoctor-pdf-lofte-example.adoc
+```
+
+On with content:
+
+* <<tabler>> shows a table example.
+* <<figurer>> shows a figure example.
+* <<exampler>> shows an example.
+* <<rubyexample>> shows a listing example.
+
+
+
+'''
+
+.Figurer
+[#figurer]
+image::./images/loft-logo.svg[pdfwidth="5cm"]
+
+'''
+
+.Tabler
+[#tabler]
+[%header, cols=2]
+|===
+|Header 1 |Header 2
+|Body 1 |Body 2
+|===
+
+'''
+
+.Exampler
+[#exampler]
+[,]
+====
+puts "Hello World"
+====
+
+<<<
+
+.Ruby Example
+[#rubyexample]
+[,ruby]
+----
+include::asciidoctor-pdf-lofte.rb[lines=32..44]
+----
